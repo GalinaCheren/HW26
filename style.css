@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.order {
+  display: flex;
+}
+.order > div {
+  width: 33%;
+  padding: 4px;
+}
+.hide {
+  display: none !important;
+}
+.itemsList {
+  padding: 15px;
+  background: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.itemCategory {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.itemCategory h3 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 10px;
+  padding: 0 5px;
+  position: relative;
+}
+
+.itemInfo {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 10px;
+  padding: 0 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.itemInfo div {
+  text-align: center;
+}
+.itemInfo button {
+  margin: 15px auto 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+li {
+  list-style: none;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  position: relative;
+  transition: 0.3s linear;
+}
+li:after {
+  content: "+";
+  position: absolute;
+  right: 10px;
+  color: white;
+  transition: 0.2s linear;
+}
+li:hover {
+  background: #72182f;
+  color: white;
+}
+
+.orderForm {
+  width: 400px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form_container {
+  padding: 10px;
+  border: 1px solid black;
+}
+.orderForm input:not([type="radio"]),
+.orderForm select,
+.orderForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.payment {
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.orderForm h3 {
+  text-align: center;
+}
+.orderForm button {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+td {
+  border: 1px black solid;
+
+  padding: 5px;
+}
