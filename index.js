@@ -125,7 +125,7 @@ function onCategoryClick(event) {
 
     itemsList.append(li);
   });
-  itemsBlock.innerHTML = "";
+  itemsBlock.innerHTML = "<h3>Product list</h3>";
   itemInfo.innerHTML = "";
   itemsBlock.append(itemsList);
 }
@@ -151,11 +151,13 @@ function onItemClick(event) {
     form.classList.remove("hide");
   };
 }
-const orderFormButton = document.querySelector(".orderForm button");
-orderFormButton.onclick = onOrderClick;
+
+const orderFormButton = document.querySelector(".orderForm");
+orderFormButton.onsubmit = onOrderClick;
 
 function onOrderClick(event) {
   const table = document.createElement("table");
+  table.className = "orderResult";
   event.preventDefault();
   form.classList.add("hide");
 

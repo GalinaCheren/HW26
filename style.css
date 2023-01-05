@@ -46,6 +46,23 @@
 .itemInfo button {
   margin: 15px auto 0;
 }
+#buyButton {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #680606 inset, 0 0 0 0 #570108;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: 0.15s ease-in-out;
+}
+#buyButton:hover {
+  box-shadow: 0 0 10px 0 #500112 inset, 0 0 10px 4px #680606;
+  color: #500112;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -104,6 +121,18 @@ li:hover {
 }
 .orderForm button {
   width: 100%;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #680606 inset, 0 0 0 0 #570108;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: 0.15s ease-in-out;
+}
+.orderForm button:hover {
+  box-shadow: 0 0 10px 0 #500112 inset, 0 0 10px 4px #680606;
+  color: #500112;
 }
 
 table {
@@ -115,4 +144,11 @@ td {
   border: 1px black solid;
 
   padding: 5px;
+}
+.orderResult {
+  width: 600px;
+  margin: auto;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
 }
