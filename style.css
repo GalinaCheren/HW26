@@ -16,22 +16,25 @@
 .itemsList {
   padding: 15px;
   background: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display";
 }
 .itemCategory {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display";
 }
-.itemCategory h3 {
+.itemCategory h3,
+.itemsList h3 {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
   margin: 0 0 10px;
   padding: 0 5px;
   position: relative;
+  font-size: 20px;
+  padding-bottom: 100px;
 }
 
 .itemInfo {
-  font-size: 16px;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
   margin: 0 0 10px;
   padding: 0 5px;
@@ -45,6 +48,7 @@
 }
 .itemInfo button {
   margin: 15px auto 0;
+  font-size: 20px;
 }
 #buyButton {
   text-decoration: none;
@@ -53,11 +57,12 @@
   margin: 10px 20px;
   border-radius: 10px;
   box-shadow: 0 0 40px 40px #680606 inset, 0 0 0 0 #570108;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display";
   font-weight: bold;
   letter-spacing: 2px;
   color: white;
   transition: 0.15s ease-in-out;
+  cursor: pointer;
 }
 #buyButton:hover {
   box-shadow: 0 0 10px 0 #500112 inset, 0 0 10px 4px #680606;
@@ -78,6 +83,8 @@ li {
   padding: 5px;
   position: relative;
   transition: 0.3s linear;
+  font-size: 20px;
+  cursor: pointer;
 }
 li:after {
   content: "+";
@@ -102,6 +109,10 @@ li:hover {
 .form_container {
   padding: 10px;
   border: 1px solid black;
+  color: white;
+  background-image: url(1636926693_1-bogatyr-club-p-tyomno-bordovii-fon-1.jpg);
+  background-size: cover;
+  font-size: 18px;
 }
 .orderForm input:not([type="radio"]),
 .orderForm select,
@@ -118,6 +129,9 @@ li:hover {
 }
 .orderForm h3 {
   text-align: center;
+  padding-bottom: 10px;
+  text-decoration: #680606 underline;
+  font-size: 25px;
 }
 .orderForm button {
   width: 100%;
@@ -125,10 +139,11 @@ li:hover {
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 0 0 40px 40px #680606 inset, 0 0 0 0 #570108;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display";
   font-weight: bold;
   color: white;
   transition: 0.15s ease-in-out;
+  font-size: 20px;
 }
 .orderForm button:hover {
   box-shadow: 0 0 10px 0 #500112 inset, 0 0 10px 4px #680606;
@@ -139,10 +154,12 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 10px;
+
+  font-family: "Playfair Display";
 }
 td {
   border: 1px black solid;
-
+  background-image: url(1636917749_56-bogatyr-club-p-belosnezhnii-fon-58.jpg);
   padding: 5px;
 }
 .orderResult {

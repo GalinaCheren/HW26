@@ -179,6 +179,8 @@ function onOrderClick(event) {
   };
 
   function render() {
+    table.innerHTML =
+      "<tr><th colspan='2'><h3 class='yourOrder'>Your order</h3></th></tr>";
     Object.entries(formResult).forEach(([name, value]) => {
       const row = document.createElement(`tr`);
 
@@ -186,6 +188,7 @@ function onOrderClick(event) {
 
       table.append(row);
     });
+
     document.body.append(table);
   }
 
